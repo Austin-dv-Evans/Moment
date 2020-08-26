@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/gradient_background">
+
+
+    <TextView
+        android:id="@+id/tv_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="223dp"
+        android:gravity="center"
+        android:text=""
+        android:textAlignment="center"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="140dp"
+        android:layout_marginLeft="140dp"
+        android:layout_marginEnd="140dp"
+        android:layout_marginRight="140dp"
+        android:layout_marginBottom="255dp"
+        android:gravity="center"
+        android:text="*tap*"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimary" />
+
+    <Button
+        android:id="@+id/btn_button"
+        android:layout_width="160dp"
+        android:layout_height="68dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="127dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="124dp"
+        android:layout_marginBottom="137dp"
+        android:backgroundTint="@color/colorPrimary"
+        android:text="Register Voice"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/record"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="146dp"
+        android:layout_marginLeft="146dp"
+        android:layout_marginEnd="145dp"
+        android:layout_marginRight="145dp"
+        android:text="Record Video"
+        android:visibility="gone"
+        android:backgroundTint="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        />
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="145dp"-->
+    <!--        android:backgroundTint="@color/colorPrimary"-->
+    <!--        android:onClick="startService"-->
+    <!--        android:text="Start Service"-->
+    <!--        android:textColor="@android:color/white" />-->
+
+    <!--    <Button-->
+    <!--        android:layout_width="match_parent"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_alignParentBottom="true"-->
+    <!--        android:layout_marginBottom="105dp"-->
+    <!--        android:backgroundTint="@color/colorPrimary"-->
+    <!--        android:onClick="stopService"-->
+    <!--        android:text="Stop Service"-->
+    <!--        android:textColor="@android:color/white" />-->
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="108dp"
+        android:layout_marginTop="0dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="MOMENT"
+        android:textAlignment="center"
+        android:textColor="@android:color/white"
+        android:textSize="60dp"/>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="58dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="571dp"
+        android:background="@color/colorPrimary"
+        android:gravity="center"
+        android:text="Set Up"
+        android:textAlignment="center"
+        android:textColor="@android:color/white" />
+
+
+    <ToggleButton
+        android:id="@+id/on_off_service"
+        android:layout_width="221dp"
+        android:layout_height="215dp"
+        android:layout_above="@+id/set_up_button"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginLeft="90dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="100dp"
+        android:layout_marginBottom="201dp"
+        android:background="@drawable/on_off_switch"
+        android:onClick="startService"
+        android:text=""
+        android:textOff=""
+        android:textOn="" />
+
+    <Button
+        android:id="@+id/my_moments"
+        android:layout_width="138dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="135dp"
+        android:layout_marginRight="135dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="My Moments"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/camera_view_button"
+        android:layout_width="138dp"
+        android:layout_height="61dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="Video Camera"
+        android:textColor="@android:color/white" />
+
+    <Button
+        android:id="@+id/set_up_button"
+        android:layout_width="139dp"
+        android:layout_height="61dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginBottom="0dp"
+        android:background="@color/colorPrimary"
+        android:text="Set Up"
+        android:textColor="@android:color/white"
+        android:layout_marginStart="0dp" />
+
+</RelativeLayout>
